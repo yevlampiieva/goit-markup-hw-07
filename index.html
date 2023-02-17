@@ -19,6 +19,9 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
     <!-- Header -->
@@ -26,6 +29,7 @@
       <div class="container header-container">
         <nav class="nav">
           <a href="./index.html" class="header-logo link">Web<span>Studio</span></a>
+
           <ul class="nav-list list">
             <li class="nav-item">
               <a href="./index.html" class="nav-item-link link current">Studio</a>
@@ -36,6 +40,7 @@
             <li class="nav-item"><a href="#" class="nav-item-link link">Contacts</a></li>
           </ul>
         </nav>
+
         <address class="header-contacts">
           <ul class="contacts-list list">
             <li class="contacts-item">
@@ -48,6 +53,88 @@
             </li>
           </ul>
         </address>
+
+        <button
+          type="button"
+          class="header-burger-menu js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="header-burger-menu-icon" width="32" height="22">
+            <use href="./images/sprite.svg#burger-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mob-menu js-menu-container" id="mobile-menu">
+        <div class="mob-container">
+          <button type="button" class="mob-close-button js-close-menu">
+            <svg class="mob-close-button-icon" width="8" height="8">
+              <use href="images/sprite.svg#icon-close-button"></use>
+            </svg>
+          </button>
+          <div>
+            <nav>
+              <ul class="mob-menu-list list">
+                <li class="mob-menu-item">
+                  <a href="./index.html" class="mob-menu-item-link link">Studio</a>
+                </li>
+                <li class="mob-menu-item">
+                  <a href="./portfolio.html" class="mob-menu-item-link link">Portfolio</a>
+                </li>
+                <li class="mob-menu-item accent">
+                  <a href="#" class="mob-menu-item-link link current">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <address class="mob-contacts">
+              <ul class="mob-contacts-list list">
+                <li class="mob-contacts-item">
+                  <a href="tel:+110001111111" class="mob-contacts-item-link link accent"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mob-contacts-item">
+                  <a href="mailto:info@devstudio.com" class="mob-contacts-item-link link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="mob-social-list list">
+              <li class="mob-social-list-item">
+                <a class="mob-social-list-link" href="#">
+                  <svg class="mob-social-list-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-social-list-item">
+                <a class="mob-social-list-link" href="#">
+                  <svg class="mob-social-list-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-social-list-item">
+                <a class="mob-social-list-link" href="#">
+                  <svg class="mob-social-list-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-social-list-item">
+                <a class="mob-social-list-link" href="#">
+                  <svg class="mob-social-list-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -58,7 +145,7 @@
         <div class="container">
           <h1 class="hero-title">
             Effective solutions <br />
-            <span>for</span> your business
+            <span class="hero-title-span">for</span> your business
           </h1>
           <button type="button" class="hero-btn" data-modal-open>Order Service</button>
         </div>
@@ -70,9 +157,11 @@
           <h2 class="about-title visually-hidden">About us</h2>
           <ul class="about-list list">
             <li class="about-item">
-              <svg class="about-icon" width="64" height="64">
-                <use href="./images/sprite.svg#icon-antenna"></use>
-              </svg>
+              <div class="about-icon-box">
+                <svg class="about-icon" width="64" height="64">
+                  <use href="./images/sprite.svg#icon-antenna"></use>
+                </svg>
+              </div>
               <h3 class="about-subtitle">Strategy</h3>
               <p class="about-text">
                 Our goal is to identify the business problem to walk away with the perfect and
@@ -80,9 +169,11 @@
               </p>
             </li>
             <li class="about-item">
-              <svg class="about-icon" width="64" height="64">
-                <use href="./images/sprite.svg#icon-clock"></use>
-              </svg>
+              <div class="about-icon-box">
+                <svg class="about-icon" width="64" height="64">
+                  <use href="./images/sprite.svg#icon-clock"></use>
+                </svg>
+              </div>
               <h3 class="about-subtitle">Punctuality</h3>
               <p class="about-text">
                 Bring the key message to the brand's audience for the best price within the shortest
@@ -90,9 +181,11 @@
               </p>
             </li>
             <li class="about-item">
-              <svg class="about-icon" width="64" height="64">
-                <use href="./images/sprite.svg#icon-diagram"></use>
-              </svg>
+              <div class="about-icon-box">
+                <svg class="about-icon" width="64" height="64">
+                  <use href="./images/sprite.svg#icon-diagram"></use>
+                </svg>
+              </div>
               <h3 class="about-subtitle">Diligence</h3>
               <p class="about-text">
                 Research and confirm brands that present the strongest digital growth opportunities
@@ -100,9 +193,11 @@
               </p>
             </li>
             <li class="about-item">
-              <svg class="about-icon" width="64" height="64">
-                <use href="./images/sprite.svg#icon-astronaut"></use>
-              </svg>
+              <div class="about-icon-box">
+                <svg class="about-icon" width="64" height="64">
+                  <use href="./images/sprite.svg#icon-astronaut"></use>
+                </svg>
+              </div>
               <h3 class="about-subtitle">Technologies</h3>
               <p class="about-text">
                 Design practice focused on digital experiences. We bring forth a deep passion for
@@ -119,28 +214,58 @@
           <h2 class="feature-title title">What are we doing</h2>
           <ul class="feature-list list">
             <li class="feature-item">
-              <img
-                src="./images/monitor.jpg"
-                alt="a website opened on a computer monitor"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  srcset="./images/work-monitor.webp 1x, ./images/work-monitor@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/work-monitor.jpg 1x, ./images/work-monitor@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/work-monitor.jpg"
+                  alt="a website opened on a computer monitor"
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
             <li class="feature-item">
-              <img
-                src="./images/application.jpg"
-                alt="an open application on a smartphone"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  srcset="./images/work-app.webp 1x, ./images/work-app@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/work-app.jpg 1x, ./images/work-app@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/work-app.jpg"
+                  alt="an open application on a smartphone"
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
             <li class="feature-item">
-              <img
-                src="./images/smartphone.jpg"
-                alt="an open website on a smartphone and on a laptop"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  srcset="./images/work-smart.webp 1x, ./images/work-smart@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/work-smart.jpg 1x, ./images/work-smart@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/work-smart.jpg"
+                  alt="an open website on a smartphone and on a laptop"
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -154,12 +279,22 @@
             <li class="team-item">
               <div class="team-card">
                 <div class="team-card-thumb">
-                  <img
-                    src="./images/mark-guerrero.jpg"
-                    alt="foto Mark Guerrero"
-                    width="264"
-                    height="260"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/mark-guerrero.webp 1x, ./images/mark-guerrero@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/mark-guerrero.jpg 1x, ./images/mark-guerrero@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/mark-guerrero.jpg"
+                      alt="foto Mark Guerrero"
+                      width="264"
+                      height="260"
+                    />
+                  </picture>
                 </div>
                 <div class="team-card-content">
                   <h3 class="team-subtitle">Mark Guerrero</h3>
@@ -200,7 +335,17 @@
             <li class="team-item">
               <div class="team-card">
                 <div class="team-card-thumb">
-                  <img src="./images/tom-ford.jpg" alt="foto Tom Ford" width="264" height="260" />
+                  <picture>
+                    <source
+                      srcset="./images/tom-ford.webp 1x, ./images/tom-ford@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/tom-ford.jpg 1x, ./images/tom-ford@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <img src="./images/tom-ford.jpg" alt="foto Tom Ford" width="264" height="260" />
+                  </picture>
                 </div>
                 <div class="team-card-content">
                   <h3 class="team-subtitle">Tom Ford</h3>
@@ -241,12 +386,22 @@
             <li class="team-item">
               <div class="team-card">
                 <div class="team-card-thumb">
-                  <img
-                    src="./images/camila-garcia.jpg"
-                    alt="foto Camila Garcia"
-                    width="264"
-                    height="260"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/camila-garcia.webp 1x, ./images/camila-garcia@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/camila-garcia.jpg 1x, ./images/camila-garcia@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/camila-garcia.jpg"
+                      alt="foto Camila Garcia"
+                      width="264"
+                      height="260"
+                    />
+                  </picture>
                 </div>
                 <div class="team-card-content">
                   <h3 class="team-subtitle">Camila Garcia</h3>
@@ -287,12 +442,22 @@
             <li class="team-item">
               <div class="team-card">
                 <div class="team-card-thumb">
-                  <img
-                    src="./images/daniel-wilson.jpg"
-                    alt="foto Daniel Wilson"
-                    width="264"
-                    height="260"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/daniel-wilson.webp 1x, ./images/daniel-wilson@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/daniel-wilson.jpg 1x, ./images/daniel-wilson@2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/daniel-wilson.jpg"
+                      alt="foto Daniel Wilson"
+                      width="264"
+                      height="260"
+                    />
+                  </picture>
                 </div>
                 <div class="team-card-content">
                   <h3 class="team-subtitle">Daniel Wilson</h3>
@@ -535,6 +700,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

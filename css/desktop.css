@@ -1,0 +1,129 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+  }
+
+  .contacts-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .contacts-item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .contacts-item-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/hero-bg-image-desktop.jpg);
+    max-width: 1440px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/hero-bg-image-desktop@2x.jpg);
+    }
+  }
+
+  .hero-title {
+    margin-bottom: 48px;
+  }
+
+  .about {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .about-list {
+    justify-content: space-between;
+  }
+
+  .about-item {
+    width: 264px;
+  }
+
+  .about-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 264px;
+    height: 112px;
+    background-color: var(--background-secondary);
+  }
+
+  .about-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .about-subtitle {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-top: 8px;
+  }
+
+  .about-text {
+    font-weight: 400;
+  }
+
+  .feature {
+    padding-bottom: 120px;
+  }
+
+  .feature-title {
+    margin-bottom: 72px;
+    text-align: center;
+  }
+
+  .feature-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .feature-item {
+    flex-basis: calc((100% - 2 * 24px) / 3);
+  }
+
+  .feature-item:not(:last-child) {
+    margin-right: 24px;
+  }
+  .team-list {
+    justify-content: space-between;
+  }
+  .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .customers-list {
+    width: auto;
+  }
+  .customers-item {
+    width: calc((100% - 24px * 5) / 6);
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+
+  .footer-left {
+    margin-right: 120px;
+  }
+
+  .footer-right {
+    margin-right: 80px;
+  }
+}
+.modal {
+  padding: 72px 24px 24px 24px;
+}

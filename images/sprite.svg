@@ -73,6 +73,10 @@
     <symbol id="icon-close-button" viewBox="0 0 32 32">
       <path d="M32 3.223 28.777 0 16 12.777 3.223 0 0 3.223 12.777 16 0 28.777 3.223 32 16 19.223 28.777 32 32 28.777 19.223 16 32 3.223z"/>
     </symbol>
+
+    <symbol id="burger-menu" viewBox="0 0 47 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.3636" d="M1.961 29.153h42.964M1.961 15.615h42.964M1.961 2.077h42.964"></path>
+</symbol>
     
   </defs>
 </svg>

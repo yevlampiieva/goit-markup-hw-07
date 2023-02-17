@@ -1,0 +1,65 @@
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 425px;
+  }
+  .user-email-input {
+    max-width: 398px;
+  }
+  .footer-last {
+    max-width: 398px;
+  }
+
+  .user-email-input {
+    max-width: 398px;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .mob-contacts-item-link.accent {
+    font-size: 36px;
+  }
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/hero-bg-image-mobile.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/hero-bg-image-mobile@2x.jpg);
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-item {
+    max-width: 396px;
+  }
+  .about-item:not(:last-child) {
+    margin-bottom: 72px;
+  }
+  .about-subtitle {
+    text-align: center;
+  }
+  .team-item {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .team-item:not(:last-child) {
+    margin-bottom: 72px;
+  }
+  .footer-left {
+    margin: 0 auto 0 auto;
+  }
+  .user-email-input {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer-btn {
+    margin: 16px auto 0 auto;
+  }
+  .modal {
+    width: 100%;
+    max-width: 392px;
+  }
+}
